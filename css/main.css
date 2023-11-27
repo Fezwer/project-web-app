@@ -5,10 +5,10 @@ body{
 
 header{
     display: flex;
-    justify-content:end;
+    justify-content:center;
     align-items: center;
-    margin-top: 3em;
-    margin-right: 7em;
+    margin-top: 1em;
+    margin-left: 20em;
 }
 
 nav{
@@ -33,16 +33,53 @@ a.main-but {
 
 #ship-logo{
     position: absolute;
-    top: 2em;
+    top: 1em;
     right: 0;
     bottom: 0;
     left: 6em;
+}
 
+.project-name{
+    font-size: 60px;
+    font-weight: 900;
+    margin-left: 6vw; 
+    max-width: 30vw;
+}
+
+.t-gr{
+    color: rgb(189, 189, 189);
+    font-size:20px;
+}
+
+.t-black{
+    color: rgb(0, 0, 0);
+}
+
+.main-items{
+    margin-top: 2em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* Распределяет элементы по контейнеру */
+}
+
+p {
+    margin: 0; /* Убирает внешние отступы у параграфа */
+}
+
+.about-us{
+    display: block;
+    max-width: 60%;
+    min-width: 50%;
+}
+
+.about-us a{
+    font-size:small;
+    text-decoration: none; /* убираем подчеркивание */
 }
 
 main{
+    margin-top: 6em;
     display: flex;
-    justify-content: end;
-    
+    align-items: center;
 }
-
