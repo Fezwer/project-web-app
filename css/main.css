@@ -139,7 +139,7 @@ main div{
 
 .main-info-text p:first-child{
     font-size: 64px;
-    color: gray;
+    color: #BDBDBD;
     margin-bottom: 8%;
 }
 
@@ -147,4 +147,34 @@ main div{
     font-size: 16px;
     line-height: 25px;
     margin-top: 4%;
+}
+
+.main-goals{
+    display: block;
+}
+
+.main-goals p:first-child{
+    font-weight: 300;
+    font-size: 64px;
+    color: #BDBDBD;
+}
+
+.goals{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.goals div{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 22px;
+    max-width: 45%;
+}
+
+.goals div p:first-child{
+    font-weight: 900;
+    font-size: 200px;
+    color: #F2F2F2;
 }
