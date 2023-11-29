@@ -1,29 +1,30 @@
-body{
+body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     overflow-x: hidden;
 }
 
-header{
+header {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-top: 1em;
     margin-left: 20em;
 }
 
-nav{
+nav {
     align-items: center;
 }
 
-.nav-but{
+.nav-but {
     background-color: rgba(0, 0, 0, 0);
     border: 2px solid rgba(0, 0, 0, 0);
 }
+
 .nav-but a {
     text-decoration: none; /* убираем подчеркивание */
     color: black;
-    font-size:larger; /* Сделать условие типо если телефон, то xx-large */
+    font-size: larger; /* Сделать условие типо если телефон, то xx-large */
 }
 
 a.main-but {
@@ -32,7 +33,7 @@ a.main-but {
     padding: 0.1em;
 }
 
-#ship-logo{
+#ship-logo {
     position: absolute;
     top: 1em;
     right: 0;
@@ -40,85 +41,86 @@ a.main-but {
     left: 6em;
 }
 
-.project-name{
+.project-name {
     font-size: 60px;
     font-weight: 900;
-    margin-left: 6vw; 
+    margin-left: 6vw;
 }
 
-.t-gr-name{
+.t-gr-name {
     color: rgb(189, 189, 189);
-    font-size:20px;
+    font-size: 20px;
     margin-top: 1em;
     font-weight: 300;
 }
 
-.main-items{
+.main-items {
     margin-top: 2em;
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between;  /* Распределяет элементы по контейнеру */
+    justify-content: space-between; /* Распределяет элементы по контейнеру */
 }
 
 p {
     margin: 0; /* Убирает внешние отступы у параграфа */
 }
 
-.about-us{
+.about-us {
     display: block;
     max-width: 60%;
 }
 
-.about-us p{
+.about-us p {
     color: rgb(0, 0, 0);
 }
 
-.about-us a:visited{
+.about-us a:visited {
     color: black;
 }
 
-.about-us img{
+.about-us img {
     height: 600px;
 }
 
-.about-us a{
-    font-size:small;
+.about-us a {
+    font-size: small;
     text-decoration: none; /* убираем подчеркивание */
 }
 
-main{
+main {
     display: block;
     flex-wrap: wrap;
     margin-left: 6%;
+    margin-right: 6%;
 }
 
-main > div {
+main>div {
     margin-top: 6em; /* Задает расстояние сверху между блоками внутри <main> */
-  }
+}
 
-main div{
+main div {
     display: flex;
 }
 
-.main-info-img{
+.main-info-img {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 50%;
 }
 
-.main-info-img img:first-child{
+.main-info-img img:first-child {
     width: 53%;
     height: auto;
 }
 
-.main-info-img img{
+.main-info-img img {
     width: 43%;
     height: auto;
 }
 
-.main-info-text{
+.main-info-text {
     display: block;
     font-weight: 300;
     max-width: 33%;
@@ -126,46 +128,47 @@ main div{
     margin-left: 2%;
 }
 
-.main-info-text a{
-    font-size:small;
+.main-info-text a {
+    font-size: small;
     font-weight: 400;
     text-decoration: none; /* убираем подчеркивание */
     color: black;
 }
 
-.main-info-text a:visited{
+.main-info-text a:visited {
     color: black;
 }
 
-.main-info-text p:first-child{
+.main-info-text p:first-child {
     font-size: 64px;
     color: #BDBDBD;
     margin-bottom: 8%;
+    line-height: 64px;
 }
 
-.main-info-text p{
+.main-info-text p {
     font-size: 16px;
     line-height: 25px;
     margin-top: 4%;
 }
 
-.main-goals{
+.main-goals {
     display: block;
 }
 
-.main-goals p:first-child{
+.main-goals p:first-child {
     font-weight: 300;
     font-size: 64px;
     color: #BDBDBD;
 }
 
-.goals{
+.goals {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.goals div{
+.goals div {
     display: flex;
     align-items: center;
     font-weight: 400;
@@ -173,8 +176,109 @@ main div{
     max-width: 45%;
 }
 
-.goals div p:first-child{
+.goals div p:first-child {
     font-weight: 900;
     font-size: 200px;
     color: #F2F2F2;
 }
+
+.wide-count {
+    margin-left: 4%;
+}
+
+.main-events {
+    display: block; /* Чтобы контейнер подстраивался по размерам содержимого */
+}
+
+.main-events p:first-child {
+    font-weight: 300;
+    font-size: 64px;
+    color: #BDBDBD;
+}
+
+.main-events div {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#event1 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#event2 {
+    width: 50%;
+    height: 100%;
+}
+
+#event3 {
+    width: 24.5%;
+    height: 100%;
+}
+
+#event4 {
+    width: 41%;
+    height: 100%;
+}
+
+#event5 {
+    width: 33%;
+    height: 100%;
+}
+
+.first-main-event{
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    height: 100%;
+}
+
+.t-in-picture{
+    display: block;
+    position: absolute;
+    top: 15%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left:10%;
+}
+
+.t-in-picture p:first-child{
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 55px;
+    color: white;
+    padding-bottom: 3%;
+}
+
+.t-in-picture a{
+    color:white;
+    font-weight: 200;
+    font-size: 12px;
+    text-decoration: none; /* убираем подчеркивание */
+}
+
+.t-in-picture a:visited{
+    color:white
+}
+
+.color-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 99%;
+    border-radius: 17px;
+    opacity: 80%;
+    background-color: rgba(51, 51, 51, 1);
+}
+
+@media only screen and (max-width: 600px) {
+    .t-in-picture p:first-child {
+      font-size: 30px;
+      line-height: 35px;
+      padding-bottom: 2%;
+    }
+  }
