@@ -1,6 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 header{
@@ -22,7 +23,7 @@ nav{
 .nav-but a {
     text-decoration: none; /* убираем подчеркивание */
     color: black;
-    font-size:large; /* Сделать условие типо если телефон, то xx-large */
+    font-size:larger; /* Сделать условие типо если телефон, то xx-large */
 }
 
 a.main-but {
@@ -43,16 +44,13 @@ a.main-but {
     font-size: 60px;
     font-weight: 900;
     margin-left: 6vw; 
-    max-width: 30vw;
 }
 
-.t-gr{
+.t-gr-name{
     color: rgb(189, 189, 189);
     font-size:20px;
-}
-
-.t-black{
-    color: rgb(0, 0, 0);
+    margin-top: 1em;
+    font-weight: 300;
 }
 
 .main-items{
@@ -70,7 +68,18 @@ p {
 .about-us{
     display: block;
     max-width: 60%;
-    min-width: 50%;
+}
+
+.about-us p{
+    color: rgb(0, 0, 0);
+}
+
+.about-us a:visited{
+    color: black;
+}
+
+.about-us img{
+    height: 600px;
 }
 
 .about-us a{
@@ -79,7 +88,63 @@ p {
 }
 
 main{
-    margin-top: 6em;
+    display: block;
+    flex-wrap: wrap;
+    margin-left: 6%;
+}
+
+main > div {
+    margin-top: 6em; /* Задает расстояние сверху между блоками внутри <main> */
+  }
+
+main div{
+    display: flex;
+}
+
+.main-info-img{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+.main-info-img img:first-child{
+    width: 53%;
+    height: auto;
+}
+
+.main-info-img img{
+    width: 43%;
+    height: auto;
+}
+
+.main-info-text{
+    display: block;
+    font-weight: 300;
+    max-width: 33%;
+    margin-bottom: auto;
+    margin-left: 2%;
+}
+
+.main-info-text a{
+    font-size:small;
+    font-weight: 400;
+    text-decoration: none; /* убираем подчеркивание */
+    color: black;
+}
+
+.main-info-text a:visited{
+    color: black;
+}
+
+.main-info-text p:first-child{
+    font-size: 64px;
+    color: gray;
+    margin-bottom: 8%;
+}
+
+.main-info-text p{
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 4%;
 }
