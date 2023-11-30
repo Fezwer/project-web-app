@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Золотые паруса
+    <title>Паруса востока
 
     </title>
     <meta name="author" content="QQteam">
@@ -15,7 +15,7 @@
     <link rel="short icon" href="img/" type="image/x-icon">
 
     <!--BoxIcons-->
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <!--GoogleFonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -100,8 +100,54 @@
                 <img id="event4" src="img/photo_event_4.png">
                 <img id="event5" src="img/photo_event_5.png">
             </div>
+            <button onclick="window.location.href='index.html'">Все мероприятия →</button>
+        </div>
+
+        <div class="main-connection">
+            <p>Связь</p>
+            <form>
+                <img src="img/connection_img.png">
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Имя"><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Номер телефона*" required><br>
+                    <input type="email" id="email" name="email" placeholder="E-mail*" required><br>
+                    <input type="text" id="topic" name="topic" placeholder="Тема"><br>
+                    <textarea id="message" name="message" placeholder="Сообщение*" required></textarea>
+                </div>
+                <button type="submit">Отправить →</button>
+            </form>
         </div>
     </main>
+
+    <div class="footer-main">
+        <img src="img/logo_white.png">
+        <div class="footer-main-info">
+            <p>Информация</p>
+            <p><a href="#">Главная</a></p>
+            <p><a href="#">Галерея</a></p>
+            <p><a href="#">Мероприятия</a></p>
+            <p><a href="#">Новости</a></p>
+            <p><a href="#">Связь</a></p>
+        </div>
+        <div class="footer-main-contact">
+            <p>Контакты</p>
+            <div><i class='bx bx-map' style='color:#ffffff; margin-bottom: 2.2em;'></i>
+                <p><a href="#"> Фонтанная ул., 47, Владивосток,<br> Приморский край, 69009</a></p>
+            </div>
+            <p><i class='bx bx-phone' style='color:#ffffff'></i> 8 800 22 33423</p>
+            <p><i class='bx bx-envelope' style='color:#ffffff'></i> east_sail_contact@gmail.com</p>
+        </div>
+        <div class="footer-main-social">
+            <p>Мы в соцсетях</p>
+            <a href="#"><i class='bx bxl-facebook' style='color:#ffffff'></i></a>
+            <a href="#"><i class='bx bxl-twitter' style='color:#ffffff'></i></box-icon></a>
+
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Все права защищены
+    </footer>
 
 </body>
 

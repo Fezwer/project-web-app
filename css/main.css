@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
 }
 
+button{
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -123,7 +127,7 @@ main div {
 .main-info-text {
     display: block;
     font-weight: 300;
-    max-width: 33%;
+    max-width: 50%;
     margin-bottom: auto;
     margin-left: 2%;
 }
@@ -142,7 +146,7 @@ main div {
 .main-info-text p:first-child {
     font-size: 64px;
     color: #BDBDBD;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     line-height: 64px;
 }
 
@@ -188,6 +192,7 @@ main div {
 
 .main-events {
     display: block; /* Чтобы контейнер подстраивался по размерам содержимого */
+position: relative;
 }
 
 .main-events p:first-child {
@@ -199,6 +204,19 @@ main div {
 .main-events div {
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.main-events button{
+    width: 20%;
+    height: 3em;
+    border-radius: 10px;
+    border: 0;
+    background-color: #333333;
+    color: white;
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 
@@ -273,6 +291,185 @@ main div {
     border-radius: 17px;
     opacity: 80%;
     background-color: rgba(51, 51, 51, 1);
+}
+
+.main-connection{   
+    display: block;
+    justify-content: space-between;
+}
+
+.main-connection form{
+    width: 100%;
+    position: relative;
+}
+
+.main-connection form div{
+    display: block;
+}
+
+.main-connection textarea,input{
+    width: 40%;
+    border: 0;
+    background-color: #F3F3F3;
+    margin: 5px;
+}
+
+.main-connection input{
+    height: 4vh;
+}
+
+.main-connection textarea{
+    width: 39%;
+    height: 17vh;
+}
+
+.main-connection textarea,input::placeholder{
+    padding-left: 1em;
+    padding-top: auto;
+}
+
+.main-connection input:focus::placeholder{
+    transition: color 0.5s ease;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.main-connection input:focus::placeholder{
+    color: transparent;
+    transform: scaleX(1);
+}
+
+.main-connection img{
+    position: absolute;
+    left: 50%;
+    width: auto;
+    height: 100%;
+}
+
+.main-connection button{
+    position: absolute;
+    width: 20%;
+    height: 3.5em;
+    border: 0;
+background-color: #333333;
+    border-radius: 17px;
+    color: white;
+    margin-top: 3%;
+}
+
+.main-connection p:first-child{
+    font-weight: 300;
+    font-size: 64px;
+    color: #BDBDBD; 
+}
+
+.footer-main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #2C2C2C;
+    margin-top: 10%;
+    color: white;
+    justify-content: space-around;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.footer-main img{
+    margin-top: 2%;
+    height: 100%;
+    width: auto;
+}
+
+.footer-main-info{
+    display: block;
+}
+
+.footer-main-info p:first-child{
+    margin: 1em 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-main-info p{
+    margin: 1em 0 2em 0;
+}
+
+.footer-main-info a{
+    text-decoration: none; /* убираем подчеркивание */
+}
+
+.footer-main-info a:visited{
+    color: white; /* убираем подчеркивание */
+}
+
+.footer-main-contact{
+    display: block;
+}
+
+.footer-main-contact div{
+    display: flex; align-items: center;
+}
+
+.footer-main-contact i{
+    margin-right: 1em;
+}
+
+.footer-main-contact p:first-child{
+    margin: 1em 0 0 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-main-contact p{
+    margin: 1em 0 2em 0;
+}
+
+.footer-main-contact a{
+    text-decoration: none; /* убираем подчеркивание */
+}
+
+.footer-main-contact a:visited{
+    color: white; /* убираем подчеркивание */
+}
+
+.footer-main-social{
+    display: block;
+    margin-right: 10%;
+}
+
+.footer-main-social i{
+    font-size: 17px;
+    margin-right: 1em;
+}
+
+.footer-main-social p:first-child{
+    margin: 1em 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.footer-main-social p{
+    margin: 1em 0 2em 0;
+}
+
+.footer-main-social a{
+    text-decoration: none; /* убираем подчеркивание */
+}
+
+.footer-main-social a:visited{
+    color: white; /* убираем подчеркивание */
+}
+
+footer{
+    width: 100%;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid gray;
+    background-color: #2C2C2C;
+    color: #C8C8C880;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 600px) {
