@@ -176,7 +176,7 @@ main div {
     display: flex;
     align-items: center;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 18px;
     max-width: 45%;
 }
 
@@ -207,16 +207,17 @@ position: relative;
 }
 
 .main-events button{
-    width: 20%;
-    height: 3em;
-    border-radius: 10px;
-    border: 0;
-    background-color: #333333;
-    color: white;
     position: absolute;
     right: 0;
     font-size: 12px;
     font-weight: 400;
+    width: 20%;
+    height: 4em;
+    border: 0;
+    background-color: #333333;
+    border-radius: 17px;
+    color: white;
+    margin-top: 1%;
 }
 
 
@@ -265,7 +266,7 @@ position: relative;
 
 .t-in-picture p:first-child{
     font-weight: 700;
-    font-size: 50px;
+    font-size: 250%;
     line-height: 55px;
     color: white;
     padding-bottom: 3%;
@@ -315,12 +316,12 @@ position: relative;
 }
 
 .main-connection input{
-    height: 4vh;
+    height: 35px;
 }
 
 .main-connection textarea{
     width: 39%;
-    height: 17vh;
+    height: 80px;
 }
 
 .main-connection textarea,input::placeholder{
@@ -341,7 +342,7 @@ position: relative;
 
 .main-connection img{
     position: absolute;
-    left: 50%;
+    left: 45%;
     width: auto;
     height: 100%;
 }
@@ -349,9 +350,9 @@ position: relative;
 .main-connection button{
     position: absolute;
     width: 20%;
-    height: 3.5em;
+    height: 4em;
     border: 0;
-background-color: #333333;
+    background-color: #333333;
     border-radius: 17px;
     color: white;
     margin-top: 3%;
@@ -471,11 +472,3 @@ footer{
     color: #C8C8C880;
     justify-content: center;
 }
-
-@media only screen and (max-width: 600px) {
-    .t-in-picture p:first-child {
-      font-size: 30px;
-      line-height: 35px;
-      padding-bottom: 2%;
-    }
-  }
