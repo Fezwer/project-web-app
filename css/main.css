@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     overflow-x: hidden;
+    min-height: 100vh;
 }
 
 button{
@@ -79,20 +80,17 @@ p {
     color: rgb(0, 0, 0);
 }
 
-.about-us a:visited {
-    color: black;
-}
-
 .about-us img {
     height: 600px;
 }
 
 .about-us a {
+    color: black;
     font-size: small;
     text-decoration: none; /* убираем подчеркивание */
 }
 
-main {
+main{
     display: block;
     flex-wrap: wrap;
     margin-left: 6%;
@@ -136,10 +134,6 @@ main div {
     font-size: small;
     font-weight: 400;
     text-decoration: none; /* убираем подчеркивание */
-    color: black;
-}
-
-.main-info-text a:visited {
     color: black;
 }
 
@@ -279,10 +273,6 @@ position: relative;
     text-decoration: none; /* убираем подчеркивание */
 }
 
-.t-in-picture a:visited{
-    color:white
-}
-
 .color-overlay {
     position: absolute;
     top: 0;
@@ -297,6 +287,7 @@ position: relative;
 .main-connection{   
     display: block;
     justify-content: space-between;
+    padding-bottom: 15%;
 }
 
 .main-connection form{
@@ -369,11 +360,15 @@ position: relative;
     height: 100%;
     display: flex;
     background-color: #2C2C2C;
-    margin-top: 10%;
+    
     color: white;
     justify-content: space-around;
     font-size: 14px;
     font-weight: 300;
+}
+
+.footer-main a{
+    color:white;
 }
 
 .footer-main img{
@@ -400,9 +395,7 @@ position: relative;
     text-decoration: none; /* убираем подчеркивание */
 }
 
-.footer-main-info a:visited{
-    color: white; /* убираем подчеркивание */
-}
+
 
 .footer-main-contact{
     display: block;
@@ -430,10 +423,6 @@ position: relative;
     text-decoration: none; /* убираем подчеркивание */
 }
 
-.footer-main-contact a:visited{
-    color: white; /* убираем подчеркивание */
-}
-
 .footer-main-social{
     display: block;
     margin-right: 10%;
@@ -458,10 +447,6 @@ position: relative;
     text-decoration: none; /* убираем подчеркивание */
 }
 
-.footer-main-social a:visited{
-    color: white; /* убираем подчеркивание */
-}
-
 footer{
     width: 100%;
     height: 2em;
@@ -472,3 +457,111 @@ footer{
     color: #C8C8C880;
     justify-content: center;
 }
+
+
+/* 
+█████████████████████████
+███──█────█───█─██─█─██─█
+██─█─█─██─█─███─██─█─██─█
+█─██─█─██─█─███─█──█────█
+█─██─█─██─█─███──█─█─██─█
+█─██─█────█─███─██─█─██─█
+█████████████████████████
+*/
+
+.login-page{
+    background-image: url("../img/login_yacht.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.25); /* Цвет и прозрачность затемняющего слоя */
+    z-index: -1; /* Размещаем слой заднего плана под остальным содержимым */
+}
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    width: 425px;
+    height: 443px;
+    background-color: rgba(217, 217, 217, 0.8);
+    border-radius: 17px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-window{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    display: block;
+    justify-content: center;
+}
+
+.login-window p:first-of-type{
+    text-align: center;
+    margin-top: 35px;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.input-box{
+    width: 340px;
+    height: 66px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 95%;
+    height: 100%;
+    border-radius: 17px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 5%;
+    font-size: 16px;
+}
+
+.submit-button{
+    margin: 40px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button button{
+    height: 42px;
+    width: 150px;
+    border-radius: 17px;
+    border: 0;
+    background-color: rgba(51, 51, 51, 1);
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.create-account{
+    display: flex;
+    justify-content: center;
+}
+
+.create-account a{
+    color:rgb(0, 0, 0);
+    text-decoration: none; /* убираем подчеркивание */
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
