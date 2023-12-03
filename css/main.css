@@ -18,7 +18,9 @@ header {
 }
 
 nav {
+    margin-left: auto;
     align-items: center;
+    justify-content: center;
 }
 
 .nav-but {
@@ -29,7 +31,24 @@ nav {
 .nav-but a {
     text-decoration: none; /* убираем подчеркивание */
     color: black;
-    font-size: larger; /* Сделать условие типо если телефон, то xx-large */
+    font-size: 16px; /* Сделать условие типо если телефон, то xx-large */
+}
+
+.profile{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profile i{
+    font-size: 32px;
+}
+
+.profile button{
+    padding: 0;
+    border: 0;
 }
 
 a.main-but {
@@ -73,7 +92,7 @@ p {
 
 .about-us {
     display: block;
-    max-width: 60%;
+    width: 60%;
 }
 
 .about-us p {
@@ -81,7 +100,8 @@ p {
 }
 
 .about-us img {
-    height: 600px;
+    height: auto;
+    width: 100%;
 }
 
 .about-us a {
