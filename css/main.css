@@ -21,6 +21,7 @@ nav {
     margin-left: auto;
     align-items: center;
     justify-content: center;
+    line-height: 12px;
 }
 
 .nav-but {
@@ -584,4 +585,10 @@ footer{
     font-size: 16px;
 }
 
+/*
+Галерея
+*/
 
+.main-gallery{
+    
+}
