@@ -22,46 +22,6 @@
     rel="stylesheet">
   <script src="js/main.js" defer></script>
 
-  <script> // Скрипт для автоматизации размещения картинок
-    function ImgEnter() {
-      var GalleryCount = 2;
-      var main = document.querySelector('main');
-      var imgContainer = document.createElement("div"); // создаем общий контейнер для span
-
-      fetch('/galleryCount')
-        .then(response => response.json())
-        .then(data => {
-          GalleryCount = data.count;
-          console.log(GalleryCount);
-
-          for (let i = 1; i <= GalleryCount; i++) {
-            var imgId = 'img' + i;
-            if (!document.getElementById(imgId)) {
-              var img = document.createElement("img");
-              img.src = 'img/gallery/gal'+i+'.jpg';
-              img.id = imgId;
-              img.onclick = function(){openOverlay(this.src)}; // добавляем onclick
-
-              var imgWrapper = document.createElement("span");
-              imgWrapper.appendChild(img);
-              imgContainer.appendChild(imgWrapper); // добавляем span в общий контейнер
-            }
-          }
-          main.appendChild(imgContainer); // добавляем общий контейнер в main
-        });
-    }
-  </script>
-
-  <script> // Скрипт для увеличения картинок
-    function openOverlay(src) {
-      document.querySelector('#overlay-image').src = src;
-      document.querySelector('.overlay').style.display = 'block';
-    }
-    function closeOverlay() {
-      document.querySelector('.overlay').style.display = 'none';
-    }
-  </script>
-
 </head>
 
 <body class="body-gal">
@@ -71,10 +31,10 @@
 
     <nav>
       <button class="nav-but"><a href="index.html">ГЛАВНАЯ</a></button>
-      <button class="nav-but"><a class="main-but" href="gallery.html">ГАЛЕРЕЯ</a></button>
+      <button class="nav-but"><a href="gallery.html">ГАЛЕРЕЯ</a></button>
       <button class="nav-but"><a href="news.html">НОВОСТИ</a></button>
       <button class="nav-but"><a href="events.html">МЕРОПРИЯТИЯ</a></button>
-      <button class="nav-but"><a href="connection.html">СВЯЗЬ</a></button>
+      <button class="nav-but"><a class="main-but" href="connection.html">СВЯЗЬ</a></button>
     </nav>
     <span class="profile">
       <i class='bx bx-user-circle'></i>
@@ -83,15 +43,16 @@
 
   </header>
 
-  <main class="main-gallery">
-    <p>ГАЛЕРЕЯ</p>
-    <script>
-      ImgEnter();
-    </script>
-  </main>
-  <div class="overlay" onclick="closeOverlay()">
-    <img id="overlay-image" />
-  </div>
+  <main class="main-connection-page">
+    <div>
+        <p>СВЯЗЬ</p>
+        <p><strong>ООО “ЯХТ СОЛЮШНС ДВ”</strong><br>Фонтанная ул., 47, Владивосток,<br>Приморский край, 69009</p>
+        <p><i class='bx bx-envelope'></i>east_sail_contact@gmail.com</p>
+        <p><i class='bx bx-phone'></i>8 800 22 33423</p>
+        <button onclick="window.location.href='index.html#main-connection'">СВЯЗАТЬСЯ С НАМИ</button>
+    </div>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ae5ef4fd544db50f308d3df792c94aee7544ccc506fbf91b4644755db9bd79f94&amp;source=constructor" width="800" height="650" frameborder="0"></iframe>
+</main>
 
   <div class="footer-container">
     <div class="footer-main">
