@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Icon -->
-  <link rel="short icon" href="img/" type="image/x-icon">
+  <link rel="short icon" href="img/logo_light.png" type="image/x-icon">
 
   <!--BoxIcons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -20,37 +20,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
-  <script src="js/gallery.js" defer></script>
-
-  <script> // Скрипт для автоматизации размещения картинок
-    function ImgEnter() {
-      var GalleryCount = 2;
-      var main = document.querySelector('main');
-      var imgContainer = document.createElement("div"); // создаем общий контейнер для span
-
-      fetch('/galleryCount')
-        .then(response => response.json())
-        .then(data => {
-          GalleryCount = data.count;
-          console.log(GalleryCount);
-
-          for (let i = 1; i <= GalleryCount; i++) {
-            var imgId = 'img' + i;
-            if (!document.getElementById(imgId)) {
-              var img = document.createElement("img");
-              img.src = 'img/gallery/gal'+i+'.jpg';
-              img.id = imgId;
-              img.onclick = function(){openOverlay(this.src)}; // добавляем onclick
-
-              var imgWrapper = document.createElement("span");
-              imgWrapper.appendChild(img);
-              imgContainer.appendChild(imgWrapper); // добавляем span в общий контейнер
-            }
-          }
-          main.appendChild(imgContainer); // добавляем общий контейнер в main
-        });
-    }
-  </script>
+  <script src="js/gallery.js"></script>
 
   <script> // Скрипт для увеличения картинок
     function openOverlay(src) {
@@ -65,7 +35,7 @@
 </head>
 
 <body class="body-gal">
-  <img id="ship-logo" src="img/logo_dark.png">
+  <img id="ship-logo" src="img/header_logo.svg">
 
   <header>
 
@@ -77,7 +47,7 @@
       <button class="nav-but"><a href="connection.html">СВЯЗЬ</a></button>
     </nav>
     <span class="profile">
-      <i class='bx bx-user-circle'></i>
+      <a href="login.html"><i class='bx bx-user-circle'></i></a>
       <button class="nav-but "><a href="login.html">ПРОФИЛЬ</a></button>
     </span>
 

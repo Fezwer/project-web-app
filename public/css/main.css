@@ -5,7 +5,7 @@ body {
     min-height: 100vh;
 }
 
-button{
+button {
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
 }
@@ -14,8 +14,9 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-left: 20em;
+    margin-right: 40px;
 }
 
 nav {
@@ -30,13 +31,14 @@ nav {
 }
 
 .nav-but a {
-    text-decoration: none; /* убираем подчеркивание */
+    text-decoration: none;
+    /* убираем подчеркивание */
     color: black;
-    font-size: 16px; /* Сделать условие типо если телефон, то xx-large */
+    font-size: 16px;
     line-height: 24px;
 }
 
-.profile{
+.profile {
     margin-left: auto;
     display: flex;
     align-items: center;
@@ -44,11 +46,16 @@ nav {
     position: relative;
 }
 
-.profile i{
-    font-size: 32px;
+.profile i {
+    font-size: 32px;    
 }
 
-.profile button{
+.profile a{
+    text-decoration: none;
+    color: black;
+}
+
+.profile button {
     padding: 0;
     border: 0;
 }
@@ -65,7 +72,8 @@ a.main-but {
     right: 0;
     bottom: 0;
     left: 6em;
-    width: 100px;
+    width: 200px;
+    height: 150px;
 }
 
 .project-name {
@@ -86,11 +94,13 @@ a.main-but {
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Распределяет элементы по контейнеру */
+    justify-content: space-between;
+    /* Распределяет элементы по контейнеру */
 }
 
 p {
-    margin: 0; /* Убирает внешние отступы у параграфа */
+    margin: 0;
+    /* Убирает внешние отступы у параграфа */
 }
 
 .about-us {
@@ -110,10 +120,11 @@ p {
 .about-us a {
     color: black;
     font-size: small;
-    text-decoration: none; /* убираем подчеркивание */
+    text-decoration: none;
+    /* убираем подчеркивание */
 }
 
-main{
+main {
     display: block;
     flex-wrap: wrap;
     margin-left: 6%;
@@ -121,7 +132,8 @@ main{
 }
 
 main>div {
-    margin-top: 6em; /* Задает расстояние сверху между блоками внутри <main> */
+    margin-top: 6em;
+    /* Задает расстояние сверху между блоками внутри <main> */
 }
 
 main div {
@@ -156,7 +168,8 @@ main div {
 .main-info-text a {
     font-size: small;
     font-weight: 400;
-    text-decoration: none; /* убираем подчеркивание */
+    text-decoration: none;
+    /* убираем подчеркивание */
     color: black;
 }
 
@@ -208,8 +221,9 @@ main div {
 }
 
 .main-events {
-    display: block; /* Чтобы контейнер подстраивался по размерам содержимого */
-position: relative;
+    display: block;
+    /* Чтобы контейнер подстраивался по размерам содержимого */
+    position: relative;
 }
 
 .main-events p:first-child {
@@ -223,7 +237,7 @@ position: relative;
     justify-content: space-between;
 }
 
-.main-events button{
+.main-events button {
     position: absolute;
     right: 0;
     font-size: 12px;
@@ -264,24 +278,24 @@ position: relative;
     height: 100%;
 }
 
-.first-main-event{
+.first-main-event {
     position: relative;
     display: inline-block;
     width: 49%;
     height: 100%;
 }
 
-.t-in-picture{
+.t-in-picture {
     display: block;
     position: absolute;
     top: 15%;
     left: 0;
     width: 100%;
     height: 100%;
-    padding-left:10%;
+    padding-left: 10%;
 }
 
-.t-in-picture p:first-child{
+.t-in-picture p:first-child {
     font-weight: 700;
     font-size: 250%;
     line-height: 55px;
@@ -289,11 +303,12 @@ position: relative;
     padding-bottom: 3%;
 }
 
-.t-in-picture a{
-    color:white;
+.t-in-picture a {
+    color: white;
     font-weight: 200;
     font-size: 12px;
-    text-decoration: none; /* убираем подчеркивание */
+    text-decoration: none;
+    /* убираем подчеркивание */
 }
 
 .color-overlay {
@@ -307,61 +322,63 @@ position: relative;
     background-color: rgba(51, 51, 51, 1);
 }
 
-.main-connection{   
+.main-connection {
     display: block;
     justify-content: space-between;
     padding-bottom: 15%;
 }
 
-.main-connection form{
+.main-connection form {
     width: 100%;
     position: relative;
 }
 
-.main-connection form div{
+.main-connection form div {
     display: block;
 }
 
-.main-connection textarea,input{
+.main-connection textarea,
+input {
     width: 40%;
     border: 0;
     background-color: #F3F3F3;
     margin: 5px;
 }
 
-.main-connection input{
+.main-connection input {
     height: 35px;
 }
 
-.main-connection textarea{
+.main-connection textarea {
     width: 39%;
     height: 80px;
 }
 
-.main-connection textarea,input::placeholder{
+.main-connection textarea,
+input::placeholder {
     padding-left: 1em;
     padding-top: auto;
 }
 
-.main-connection input:focus::placeholder{
+.main-connection input:focus::placeholder {
     transition: color 0.5s ease;
     transform-origin: left;
     transform: scaleX(0);
 }
 
-.main-connection input:focus::placeholder{
+.main-connection input:focus::placeholder {
     color: transparent;
     transform: scaleX(1);
 }
 
-.main-connection img{
+.main-connection img {
     position: absolute;
     left: 45%;
     width: auto;
     height: 100%;
 }
 
-.main-connection button{
+.main-connection button {
     position: absolute;
     width: 20%;
     height: 4em;
@@ -372,22 +389,22 @@ position: relative;
     margin-top: 3%;
 }
 
-.main-connection p:first-child{
+.main-connection p:first-child {
     font-weight: 300;
     font-size: 64px;
-    color: #BDBDBD; 
+    color: #BDBDBD;
 }
 
-.footer-container{
+.footer-container {
     margin-top: auto;
 }
 
-.footer-main{
+.footer-main {
     width: 100%;
     height: 100%;
     display: flex;
     background-color: #2C2C2C;
-    position:static;
+    position: static;
     bottom: 0;
     color: white;
     justify-content: space-around;
@@ -397,92 +414,96 @@ position: relative;
     padding-bottom: 2em;
 }
 
-.footer-main a{
-    color:white;
+.footer-main a {
+    color: white;
 }
 
-.footer-main-img{
+.footer-main-img {
     margin-top: 2%;
     font-weight: 900;
     font-size: 20;
 }
 
-.footer-main img{
+.footer-main img {
     width: 80px;
     height: auto;
 }
 
-.footer-main-info{
+.footer-main-info {
     display: block;
 }
 
-.footer-main-info p:first-child{
+.footer-main-info p:first-child {
     margin: 1em 0;
     font-size: 16px;
     font-weight: 700;
 }
 
-.footer-main-info p{
+.footer-main-info p {
     margin: 1em 0 2em 0;
 }
 
-.footer-main-info a{
-    text-decoration: none; /* убираем подчеркивание */
+.footer-main-info a {
+    text-decoration: none;
+    /* убираем подчеркивание */
 }
 
 
 
-.footer-main-contact{
+.footer-main-contact {
     display: block;
 }
 
-.footer-main-contact div{
-    display: flex; align-items: center;
+.footer-main-contact div {
+    display: flex;
+    align-items: center;
 }
 
-.footer-main-contact i{
+.footer-main-contact i {
     margin-right: 1em;
 }
 
-.footer-main-contact p:first-child{
+.footer-main-contact p:first-child {
     margin: 1em 0 0 0;
     font-size: 16px;
     font-weight: 700;
 }
 
-.footer-main-contact p{
+.footer-main-contact p {
     margin: 1em 0 2em 0;
 }
 
-.footer-main-contact a{
-    text-decoration: none; /* убираем подчеркивание */
+.footer-main-contact a {
+    text-decoration: none;
+    /* убираем подчеркивание */
 }
 
-.footer-main-social{
+.footer-main-social {
     display: block;
     margin-right: 10%;
 }
 
-.footer-main-social i{
+.footer-main-social i {
     font-size: 17px;
     margin-right: 1em;
 }
 
-.footer-main-social p:first-child{
+.footer-main-social p:first-child {
     margin: 1em 0;
     font-size: 16px;
     font-weight: 700;
 }
 
-.footer-main-social p{
+.footer-main-social p {
     margin: 1em 0 2em 0;
 }
 
-.footer-main-social a{
-    text-decoration: none; /* убираем подчеркивание */
+.footer-main-social a {
+    text-decoration: none;
+    /* убираем подчеркивание */
 }
 
-footer{
+footer {
     width: 100%;
     height: 70px;
     display: flex;
@@ -506,7 +527,7 @@ footer{
 █████████████████████████
 */
 
-.login-page{
+.login-page {
     background-image: url("../img/login_yacht.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -518,17 +539,19 @@ footer{
     align-items: center;
 }
 
-.black-overlay{
+.black-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(44, 44, 44, 0.8); /* Цвет и прозрачность затемняющего слоя */
-    z-index: -1; /* Размещаем слой заднего плана под остальным содержимым */
+    background: rgba(44, 44, 44, 0.8);
+    /* Цвет и прозрачность затемняющего слоя */
+    z-index: -1;
+    /* Размещаем слой заднего плана под остальным содержимым */
 }
 
-.wrapper{
+.wrapper {
     display: flex;
     justify-content: center;
     width: 425px;
@@ -538,7 +561,7 @@ footer{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.login-window{
+.login-window {
     display: flex;
     align-items: stretch;
     justify-content: center;
@@ -546,20 +569,20 @@ footer{
     justify-content: center;
 }
 
-.login-window p:first-of-type{
+.login-window p:first-of-type {
     text-align: center;
     margin-top: 35px;
     font-weight: 700;
     font-size: 40px;
 }
 
-.input-box{
+.input-box {
     width: 340px;
     height: 66px;
     margin: 30px 0;
 }
 
-.input-box input{
+.input-box input {
     width: 95%;
     height: 100%;
     border-radius: 17px;
@@ -571,13 +594,13 @@ footer{
     outline: none;
 }
 
-.submit-button{
+.submit-button {
     margin: 40px 0 20px 0;
     display: flex;
     justify-content: center;
 }
 
-.submit-button button{
+.submit-button button {
     height: 42px;
     width: 150px;
     border-radius: 17px;
@@ -590,14 +613,15 @@ footer{
 }
 
 
-.create-account{
+.create-account {
     display: flex;
     justify-content: center;
 }
 
-.create-account a{
-    color:rgb(0, 0, 0);
-    text-decoration: none; /* убираем подчеркивание */
+.create-account a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* убираем подчеркивание */
     font-weight: 400;
     font-size: 16px;
 }
@@ -612,7 +636,7 @@ footer{
 █████████████████████████████████
 */
 
-.main-gallery{
+.main-gallery {
     color: black;
     font-size: 64px;
     font-weight: 900;
@@ -622,13 +646,13 @@ footer{
     margin-right: 0;
 }
 
-.main-gallery div{
+.main-gallery div {
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
 }
 
-.main-gallery span{
+.main-gallery span {
     width: 210px;
     height: 260px;
     margin: 2%;
@@ -636,7 +660,7 @@ footer{
     overflow: hidden;
 }
 
-.main-gallery img{
+.main-gallery img {
     border-radius: 17px;
     object-fit: cover;
     width: 100%;
@@ -658,7 +682,8 @@ footer{
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 9999;
-  }
+}
+
 .overlay img {
     display: block;
     max-width: 80%;
@@ -679,7 +704,7 @@ footer{
 ██████████████████████████████████████████████████████
 */
 
-.wrapper-reg{
+.wrapper-reg {
     display: flex;
     justify-content: center;
     width: 425px;
@@ -699,7 +724,7 @@ footer{
 ██████████████████████████
 */
 
-.main-connection-page{
+.main-connection-page {
     margin: 0;
     margin-top: 10em;
     margin-bottom: 10%;
@@ -709,7 +734,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.main-connection-page iframe{
+.main-connection-page iframe {
     border-radius: 17px;
     width: 50%;
     height: auto;
@@ -717,7 +742,7 @@ footer{
     min-width: 800px;
 }
 
-.main-connection-page div{
+.main-connection-page div {
     margin: 0;
     margin-left: 5%;
     display: block;
@@ -727,25 +752,25 @@ footer{
     top: -32px;
 }
 
-.main-connection-page p{
+.main-connection-page p {
     margin: 1em 0;
 }
 
-.main-connection-page p:first-child{
+.main-connection-page p:first-child {
     font-size: 64px;
     font-weight: 900;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
-.main-connection-page i{
+.main-connection-page i {
     position: relative;
     top: 5px;
     font-size: 24px;
     margin-right: 5px;
 }
 
-.main-connection-page button{
+.main-connection-page button {
     font-size: 12px;
     font-weight: 400;
     width: 20%;
@@ -758,4 +783,452 @@ footer{
     width: 228px;
     height: 70px;
     margin-top: 3em;
+}
+
+/*
+ПРОФИЛЬ
+*/
+
+.hello_head {
+    margin-bottom: 20px;
+}
+
+.main_profile {
+    color: #333333;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-top: 2em;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+.hello_profile {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.buttons_profile {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* BALANCE */
+.money_prof {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 550px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.balance_prof {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+.bal_descr_prof {
+    color: #494949;
+    opacity: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+/* STATUS */
+
+.status_prof {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    max-width: 550px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.status_value {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+.stat_descr_prof {
+    color: #494949;
+    opacity: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+/* EVENTS PROFILE BUTTON */
+.events_prof {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    max-width: 400px;
+    text-decoration: none;
+    color: #333333;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.events_prof:visited {
+    text-decoration: none;
+}
+
+.events_prof_name {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+.events_descr_prof {
+    color: #494949;
+    opacity: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+
+/* YACHT BLOCK */
+
+.rent_prof {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: stretch;
+
+}
+
+.yacht_prof {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    padding: 20px;
+    max-width: 270px;
+    text-decoration: none;
+    color: #333333;
+    margin-bottom: 30px;
+    margin-right: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.yacht_prof:visited {
+    text-decoration: none;
+}
+
+.yacht_name_prof {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+.yacht_descr_prof {
+    color: #494949;
+    opacity: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+/* rent block */
+.yacht_rent_button {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    padding: 20px;
+    max-width: 220px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.yacht_rent_button:visited {
+    text-decoration: none;
+}
+
+.yacht_rent_prof {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #333333;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 2px;
+    margin-right: 0;
+    height: 100%;
+}
+
+/* DELETE BUTTON */
+
+#deletion{
+    width: 342;
+    height: 22;
+    font-size: 20px;
+    padding: 10px;
+    color: #8e0000;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 50px;
+}
+
+
+/* EXIT AND ADMINISTRATOR */
+
+.exit_adm {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: stretch;
+}
+
+.exit {
+    width: 100%;
+    height: 100%;
+    background-color: #CECECE;
+    border-radius: 17px;
+    padding: 13px;
+    max-width: 150px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.exit_text{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+
+}
+
+.admin_number {
+    width: 100%;
+    height: 100%;
+    background-color: #D4E5FF;
+    border-radius: 17px;
+    padding: 13px;
+    max-width: 370px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #003C96;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+
+
+
+
+
+.container_profile {
+    margin-left: 90px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+
+}
+
+.body-profile {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+/* EVENTS */
+
+.hello_event {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+.events_block {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 550px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.event_name {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+.event_descript {
+    color: #494949;
+    opacity: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+/* EVENT LOCATION */
+.event_location {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    display: inline-block;
+    max-width: 550px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.location_heading {
+    color: #333333;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+.location_info {
+    color: #494949;
+    opacity: 75%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+}
+
+/* EXIT AND CANCEL EVENT */
+
+.exit_cancel {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: stretch;
+    margin-bottom: 50px;
+}
+
+.back {
+    width: 100%;
+    height: 100%;
+    background-color: #CECECE;
+    border-radius: 17px;
+    padding: 13px;
+    max-width: 150px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.back_text{
+    color: #333333;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+
+}
+
+#cancel_event {
+    width: 100%;
+    height: 100%;
+    background-color: #FFE8E8;
+    border-radius: 17px;
+    padding: 13px;
+    max-width: 370px;
+    text-decoration: none;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #9B0101;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 2px;
+    margin-right: 0;
+    border: none;
 }

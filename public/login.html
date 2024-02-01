@@ -9,9 +9,10 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="css/main.css">
+    <script src="js/log.js"></script>
 
     <!-- Icon -->
-    <link rel="short icon" href="img/" type="image/x-icon">
+    <link rel="short icon" href="img/logo_light.png" type="image/x-icon">
 
     <!--BoxIcons-->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -31,7 +32,7 @@
     <div class="wrapper">
         <div class="login-window">
             <p>Авторизация</p>
-            <form>
+            <form id="login-form" method="POST" action="/login">
                 <div class="input-box">
                     <input type="email" id="login_email" name="email" placeholder="E-mail" required><br>
                 </div>
