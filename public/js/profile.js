@@ -16,15 +16,14 @@ document.getElementById('end_date').textContent = date;
 // Проверка яхты
 const yachtValue = document.getElementById('user_yacht');
 const dateValue = document.getElementById('end_date');
-if (yacht === 'undefined') {
+if (yacht === 'Нет яхты') {
   yachtValue.textContent = 'Отсутствует';
 }
 if (date === 'null') {
   dateValue.textContent = 'Отсутствует';
 } else {
-  dateValue.textContent = 'до ' + dateValue.textContent;
+  dateValue.textContent = 'до ' + date;
 }
-
 
 // Добавляем эмодзи медальки
 const statusValue = document.getElementById('user_level');
@@ -35,6 +34,16 @@ if (level === 'ЗОЛОТОЙ') {
 } else if (level === 'БРОНЗОВЫЙ') {
   statusValue.textContent = 'БРОНЗОВЫЙ 🥉';
 }
+
+// Обновление ссылки на yacht-rent.html, чтобы включить параметр 'balance'
+document.addEventListener('DOMContentLoaded', function() {
+    const yachtRentLink = document.querySelector('.yacht_rent_button');
+    const yachtRentLink1 = document.querySelector('.yacht_prof');
+    if (yachtRentLink) {
+      yachtRentLink.href = `yacht-rent.html?balance=${balance}`;
+      yachtRentLink1.href = `yacht-rent.html?balance=${balance}`;
+    } 
+  });
 
 document.getElementById("deletion").addEventListener("click", function () {
     disableScroll(); // Запрет прокрутки

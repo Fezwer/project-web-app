@@ -1232,3 +1232,151 @@ footer {
     margin-right: 0;
     border: none;
 }
+
+/*
+ПРОФИЛЬ
+*/
+
+.admin_head {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.admin_hello {
+    color: #333333;
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-top: 2em;
+    margin-bottom: 20px;
+    margin-right: 0;
+}
+
+.event_adm {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.event_name {
+    color: #333333;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+
+.news_adm {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.news_name {
+    color: #333333;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+
+.gal_adm {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.gal_name {
+    color: #333333;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+
+.users_adm {
+    width: 50%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    margin-bottom: 10px;
+    padding: 20px;
+    padding-top: 10px;
+    max-width: 350px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.users_name {
+    color: #333333;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 64px;
+    margin-bottom: 2px;
+    margin-right: 0;
+    margin-bottom: 0;
+    height: 54px;
+}
+
+
+
+.RentTable{
+    min-width: 80%;
+    background-color: #F7F7F7;
+    border-radius: 17px;
+    padding: 10px;
+    padding-top: 10px;
+    max-width: 550px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.RentTable table{
+    width: 100%;
+}
+
+
+
+/* #shipTable table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid black;
+}
+
+table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+} */
+
+

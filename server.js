@@ -69,10 +69,15 @@ app.post('/login',
     const user_fullname = req.user.full_name;
     const user_lvl = req.user.club_lvl;
     const user_balance = req.user.user_balance;
-    const user_yacht = req.user.yacht_id;
     const user_data = req.user.end_date;
-    req.session.user = { id: req.user.id, username: user_fullname }; 
-    res.redirect('/profile.html?fullname=' + user_fullname + '&level=' + user_lvl + '&balance=' + user_balance + '&yacht=' + user_yacht + '&date=' + user_data);
+
+    // Получение названия яхты пользователя из базы данных
+    db.get('SELECT yacht_name FROM rent_yacht WHERE yacht_owner = ?', [req.user.id], function(err, row) {
+      const user_yacht = (row && row.yacht_name) ? row.yacht_name : 'Нет яхты'; // Если у пользователя есть яхта, то используем ее название, в противном случае выводим "Нет яхты"
+
+      req.session.user = { id: req.user.id, username: user_fullname }; 
+      res.redirect('/profile.html?fullname=' + user_fullname + '&level=' + user_lvl + '&balance=' + user_balance + '&yacht=' + user_yacht + '&date=' + user_data);
+    });
   }
 );
 
@@ -152,6 +157,18 @@ app.get('/logout', requireLogin, function(req, res) {
   res.sendStatus(200); // Отправляем успешный статус код
 });
 
+app.get('/getShipsData', (req, res) => {
+  // Выполняем запрос к базе данных для получения данных о яхтах
+  db.all('SELECT * FROM rent_yacht', (err, rows) => {
+    if (err) {
+      console.error('Ошибка при выполнении запроса к базе данных:', err);
+      res.status(500).json({ error: 'Ошибка при выполнении запроса к базе данных' });
+    } else {
+      // Отправляем данные о яхтах клиенту в формате JSON
+      res.json({ ships: rows });
+    }
+  });
+});
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {

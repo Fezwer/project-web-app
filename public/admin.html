@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/main.css">
 
   <!-- Icon -->
-  <link rel="short icon" href="img/logo_light.png" type="image/x-icon">
+  <link rel="short icon" href="img/" type="image/x-icon">
 
   <!--BoxIcons-->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,6 +21,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
+
 </head>
 
 
@@ -30,69 +31,43 @@
   <header>
 
     <nav>
-      <button class="nav-but"><a href="index.html">ГЛАВНАЯ</a></button>
+      <button class="nav-but"><a class="main-but" href="index.html">ГЛАВНАЯ</a></button>
       <button class="nav-but"><a href="gallery.html">ГАЛЕРЕЯ</a></button>
       <button class="nav-but"><a href="news.html">НОВОСТИ</a></button>
       <button class="nav-but"><a href="events.html">МЕРОПРИЯТИЯ</a></button>
       <button class="nav-but"><a href="connection.html">СВЯЗЬ</a></button>
     </nav>
     <span class="profile">
-      <a href="login.html"><i class='bx bx-user-circle'></i></a>
+      <i class='bx bx-user-circle'></i>
       <button class="nav-but "><a href="login.html">ПРОФИЛЬ</a></button>
     </span>
 
   </header>
 
   <section class="container_profile">
-    <div class="hello_head">
-      <p class="main_profile">ЛИЧНЫЙ КАБИНЕТ</p>
-      <p class="hello_profile">Здравствуйте, <span id="user_fullname"></span></p>
+    <div class="admin_head">
+      <p class="admin_hello">Администрирование</p>
     </div>
     <div class="buttons_profile">
-      <div class="money_prof">
-        <p class="balance_prof"><span id="user_balance"></span> ₽</p>
-        <p class="bal_descr_prof">
-          Остаток на Вашем лицевом счете</br>
-          Для внесения оплаты обратитесь в кассу яхт-клуба<br>
-          (Время работы: 8:00 - 21:00)
-        </p>
+      <div class="event_adm">
+        <p class="event_name">Мероприятия  🗓️</p>
       </div>
-      <div class="status_prof">
-        <p class="status_value"><span id="user_level"></span></p>
-        <p class="stat_descr_prof">
-          Ваш статус в клубе</br>
-          Для улучшения статуса участвуйте в мероприятиях
-        </p>
+      <div class="news_adm">
+        <p class="news_name">Новости  📰</p>
       </div>
-      <a href="events.html" class="events_prof">
-        <p class="events_prof_name">Мероприятия 🗓️</p>
-        <p class="events_descr_prof">
-          Участвуйте в мероприятиях и </br>
-          повышайте свой статус в клубе
-        </p>
-      </a>
-      <div class="rent_prof">
-        <a href="yacht-rent.html" class="yacht_prof">
-          <p class="yacht_name_prof"><span id="user_yacht"></span></p>
-          <p class="yacht_descr_prof">
-            Ваша яхта<br>
-            Статус: <span id="end_date"></span>
-          </p>
-        </a>
-        <a href="yacht-rent.html" class="yacht_rent_button">
-          <p class="yacht_rent_prof">Управление <br>
-            арендой</p>
-        </a>
+      <div class="gal_adm">
+        <p class="gal_name">Галерея  🖼️</p>
+      </div>
+      <div class="users_adm">
+        <p class="users_name">Пользователи  💾</p>
+      </div>
     </div>
-      <div class="tools">
+      
+      <div class="tools_adm">
         <div class="exit_adm">
           <a href="login.html" class="exit">
             <p class="exit_text">Выйти</p>
           </a>
-          <p class="admin_number">8 800 2213 234 (администратор)</p>
-        </div>
-        <button id="deletion">Удалить профиль</button>
-      </div>
     </div>
   </section>
 
@@ -136,10 +111,7 @@
     </footer>
   </div>
 
-  
-
-  <script src="js/profile.js" defer></script>
-
+  <script src="/js/delete_profile.js"></script>
 </body>
 
 
